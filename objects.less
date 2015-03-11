@@ -1,0 +1,51 @@
+/* Island via
+Harry Roberts
+http://csswizardry.com/2011/10/the-island-object/
+*/
+.island{
+  padding:20px;
+  margin-bottom:20px;
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+/*
+  Media element via
+  @stubbornella (Nicole Sullivan)
+  http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
+
+  Useage:
+
+  <div class="media attribution">
+    <a href="http://twitter.com/stubbornella" class="img">
+      <img src="http://stubbornella.com/profile_image.jpg" alt="me" />
+    </a>
+
+    <div class="bd">
+      @Stubbornella 14 minutes ago
+    </div>
+  </div>
+ */
+.media {
+  margin:10px;
+
+  .img {
+    float:left; margin-right: 10px;
+
+    img {
+      display: block;
+    }
+  }
+
+  .imgExt {
+    float:right; margin-left: 10px;
+  }
+}
+
+.media, .bd {
+  overflow:hidden;
+  _overflow:visible;
+  zoom:1;
+}
